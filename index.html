@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>The Vividhata Times</title>
+</head>
+
+<body>
+    <main>
+        <div class="heading">
+            <span>The</span>
+            <h1><b>Vividhata Times</b></h1>
+                <p>A Diversity of Technocrats </p>
+        </div>
+        <p>October 2024 Edition</p>
+        <section class="section-1" id="about">
+            <h2>To the New Beginnings</h2>
+            <div class="content">
+                <div class="text">
+                    <div class="left">
+                        <p><span>D</span>iversity took center stage at the grand inauguration of the Vividhata club, marking a celebration of unity, creativity, and innovation. This event, brimming with anticipation and enthusiasm, began with a dignified candle-lighting ceremony led by the esteemed Director, whose act of igniting the first flame symbolized the spark of enlightenment and the new beginnings that Vividhata promises to usher in. The warm glow of the candles resonated deeply with the club's core values—bringing together a spectrum of talents, skills, and perspectives under one vibrant banner.</p>
+
+                        <p> Every corner of the venue reflected the club's motto, <small class="circle">"A diversity of technocrats</small>," serving as a reminder of Vividhata’s mission to bring together individuals from varied backgrounds, each contributing their unique strengths and perspectives.</p>
+
+                        <p class="last">
+
+                            <span>VIVIDHATA</span>
+                            Following the ceremonial opening, an engaging presentation introduced attendees to Vividhata's vision and mission. The comprehensive slideshow delved into the club's objectives: fostering a platform where diverse talents in technology, creative expression, and teamwork come together to flourish. It underscored Vividhata’s role as a bridge between budding technocrats and their aspirations, highlighting how the club will serve as a community for students passionate about exploring the intersections of art, science, and innovation.
+                        </p>
+                    </div>
+                    <div class="right">
+
+                        <p></p>
+
+                        <p>The evening then turned lively with a series of cultural programs organized by the Cultural Club. A harmonious blend of musical and dance performances filled the room, showcasing the boundless creativity Vividhata aims to nurture. These performances were a testament to the club’s inclusive ethos, celebrating the vibrant and multifaceted talents that students bring to the community.</p>
+
+                        <p>As the highlight of the inauguration, a badge-giving ceremony honored the newly appointed heads of Vividhata. Each head, selected for their leadership and dedication to the club’s mission, proudly accepted their badges in a moment that marked both personal achievement and collective responsibility. With their new roles, they stand ready to steer Vividhata forward, embodying its values of diversity, collaboration, and growth.</p>
+
+                        <p>The event concluded with resounding applause and a renewed sense of commitment among all attendees. The inauguration not only set the foundation for Vividhata but also resonated as a celebration of diversity, creativity, and a shared journey toward innovation. This momentous beginning signals a bright future for the club, where each new day brings fresh ideas and avenues for students to connect, create, and lead in a world brimming with possibilities.</p>
+                    </div>
+                </div>
+                <div class="video">
+                    <video src="video/video2.mp4" autoplay muted loop></video>
+                </div>
+            </div>
+        </section>
+        <section class="section-2" id="work">
+            <div class="content">
+                <div class="text">
+                    <h2>A coding contest like no other</h2>
+                    <p>On October 13, 2024, the Vividhata Tech Club successfully hosted <small class="circle">Hackquest</small>, a dynamic online coding competition that engaged aspiring programmers in a challenging battle of data structure and algorithm (DSA) skills on the HackerRank platform. Running for 1 hour and 45 minutes, HackQuest aimed to inspire competitive programming and problem-solving through an array of carefully crafted challenges. With 60 participants joining the event’s WhatsApp group, the contest garnered significant interest, culminating in 28 signups on HackerRank. The technical team curated five unique questions, from "The Wisteria Tree’s Leaf Prophecy" to "Dedicate Your Hearts," each designed to test analytical thinking and coding precision. The competition concluded with standout performances, as Rishi Varshney claimed the top spot, followed by Abhishek Kumar Chaurasia and Kshitij Dwivedi as first and second runners-up, respectively. HackQuest’s success reflects the enthusiasm and talent within the tech community, setting the stage for future competitions that encourage learning and excellence through friendly rivalry..</p>
+                </div>
+                <div class="text">
+                    <h2>Project fair of a decade</h2>
+                    <img src="images/4.png" class="image">
+                    <p>The CSE-AI Department recently hosted a Mini Project Presentation, where student groups of up to four showcased innovative project ideas through engaging poster presentations. Judged by HoDs and faculty from various departments, the event provided students with an opportunity to present their technical ideas and solutions while receiving valuable feedback. The cross-departmental panel fostered diverse perspectives, encouraging students to refine their concepts and build interdisciplinary connections. This initiative highlighted the department's commitment to cultivating creativity and problem-solving skills among future technologists.</p>
+                </div> 
+            </div>
+        </section>
+    </main>
+    <div class="mouse-trail">
+        <div class="box">V</div>
+        <div class="box">I</div>
+        <div class="box">V</div>
+        <div class="box">I</div>
+        <div class="box">D</div>
+        <div class="box">H</div>
+        <div class="box">A</div>
+        <div class="box">T</div>
+        <div class="box">A</div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+        integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        gsap.from("h1 b", {
+            y: 100,
+            opacity: 0,
+            duration: 0.9
+        })
+
+        gsap.from(".heading p", {
+            y: 10,
+            opacity: 0,
+            delay: 0.3,
+            duration: 0.5
+        })
+
+        gsap.from(".section-1", {
+            y: 1000,
+            opacity: 0,
+            delay: 0.3,
+            duration: 1
+        })
+
+        document.querySelector(".section-1").addEventListener("mousemove", (e) => {
+            gsap.to(".box", {
+                x: e.clientX,
+                y: e.clientY,
+                stagger: 0.1,
+                opacity: 0.8,
+                display: "grid",
+            });
+        });
+        document.querySelector(".section-1").addEventListener("mouseout", (e) => {
+            gsap.to(".box", {
+                x: e.clientX,
+                y: e.clientY,
+                stagger: 0.1,
+                opacity: 0,
+                display: "none",
+            });
+        });
+        document.querySelector(".section-2").addEventListener("mousemove", (e) => {
+            gsap.to(".box", {
+                x: e.clientX,
+                y: e.clientY,
+                stagger: 0.1,
+                opacity: 0.8,
+                display: "grid",
+            });
+        });
+        document.querySelector(".section-2").addEventListener("mouseout", (e) => {
+            gsap.to(".box", {
+                x: e.clientX,
+                y: e.clientY,
+                stagger: 0.1,
+                opacity: 0,
+                display: "none",
+            });
+        });
+    </script>
+</body>
+
+</html>
