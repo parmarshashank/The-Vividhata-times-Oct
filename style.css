@@ -349,7 +349,65 @@ main {
   z-index: -9;
 }
 
+@media (max-width: 1024px) {
+  .heading h1 {
+    font-size: 2.5em;
+  }
 
+  .section-1 h2 {
+    font-size: 2em;
+  }
+
+  .text, .video {
+    flex: 1 1 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .heading h1 {
+    font-size: 2em;
+  }
+
+  .heading span {
+    font-size: 1.2em;
+  }
+
+  .section-1 h2 {
+    font-size: 1.8em;
+  }
+
+  .text, .video {
+    flex: 1 1 100%;
+    padding: 5px;
+  }
+
+  .circle {
+    font-size: 0.9em;
+  }
+
+  .last span {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading h1 {
+    font-size: 1.8em;
+  }
+
+  .heading span {
+    font-size: 1em;
+  }
+
+  .section-1 h2 {
+    font-size: 1.5em;
+  }
+
+  .text, .video {
+    flex: 1 1 100%;
+    padding: 5px;
+  }
+}
 
 .mouse-trail{
     position: fixed;
